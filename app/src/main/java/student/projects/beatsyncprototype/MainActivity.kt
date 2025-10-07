@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
-        // Default fragment
+        // Load default fragment (Home)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment())
@@ -26,16 +26,14 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> HomeFragment()
                 R.id.nav_add -> AddFragment()
                 R.id.nav_music -> MusicFragment()
-                R.id.nav_profile -> ProfileFragment()
+                R.id.nav_settings -> SettingsFragment() // Handles logout + app settings
+                R.id.nav_profile -> ProfileFragment()   // Handles account settings
                 else -> null
             }
 
             fragment?.let {
                 supportFragmentManager.beginTransaction()
-                    .setCustomAnimations(
-                        android.R.anim.fade_in,
-                        android.R.anim.fade_out
-                    )
+                    .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
                     .replace(R.id.fragment_container, it)
                     .commit()
                 true

@@ -24,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
         val subtitle = findViewById<TextView>(R.id.appSubtitle)
         val button = findViewById<MaterialButton>(R.id.btnGetStarted)
 
-        // 🔹 Fade-in animation
+        // Fade-in animation
         val fadeIn = AlphaAnimation(0f, 1f).apply {
             duration = 1200
             fillAfter = true
@@ -34,14 +34,14 @@ class SplashActivity : AppCompatActivity() {
         title.startAnimation(fadeIn)
         subtitle.startAnimation(fadeIn)
 
-        // 🔹 If already signed in, skip login
+        // If already signed in, skip login
         if (auth.currentUser != null) {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
             return
         }
 
-        // 🔹 Button → LoginActivity
+        // Button → LoginActivity
         button.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
