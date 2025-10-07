@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801965366431",
+    "project_id": "beatsync-4d009",
+    "storage_bucket": "beatsync-4d009.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801965366431:android:497a24cf10fc2731f0d6aa",
+        "android_client_info": {
+          "package_name": "student.projects.beatsyncprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801965366431-d6c5cjql1khmrrup1dd88hln06c3obks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKm41M4iSPD_qFGg4WhSLfky9qCxPv-Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801965366431-d6c5cjql1khmrrup1dd88hln06c3obks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
